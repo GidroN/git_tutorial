@@ -6,10 +6,14 @@ def add(x: int, y: int) -> int:
 def sub(x: int, y: int) -> int:
     return x - y
 
+def mult(x: int, y: int) -> int:
+    return x * y
+
 def main():
     x, y = map(int, input('> ').split())
     sub()
     add()
+    mult()
 
 if __name__ == '__main__':
     main()
