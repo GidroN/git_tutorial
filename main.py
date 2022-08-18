@@ -19,6 +19,7 @@ def main():
     sub(x, y)
     add(x, y)
     mult(x, y)
+    div(x, y)
 
 if __name__ == '__main__':
     main()
