@@ -11,9 +11,9 @@ def mult(x: int, y: int) -> int:
 
 def main():
     x, y = map(int, input('> ').split())
-    sub()
-    add()
-    mult()
+    sub(x, y)
+    add(x, y)
+    mult(x, y)
 
 if __name__ == '__main__':
     main()
