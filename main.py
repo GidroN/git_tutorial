@@ -9,6 +9,11 @@ def sub(x: int, y: int) -> int:
 def mult(x: int, y: int) -> int:
     return x * y
 
+def div(x: int, y: int) -> int:
+    if y == 0:
+        raise ZeroDivisionError()
+    return x // y
+
 def main():
     x, y = map(int, input('> ').split())
     sub(x, y)
