@@ -16,6 +16,9 @@ class Calculator:
             raise ZeroDivisionError()
         return x // y
 
+    def mod(x: int, y: int) -> int:
+        return x % y
+
 def main():
     x, y = map(int, input('> ').split())
     calc = Calculator()
@@ -23,6 +26,7 @@ def main():
     calc.add(x, y)
     calc.mult(x, y)
     calc.div(x, y)
+    calc.mod(x, y)
 
 if __name__ == '__main__':
     main()
