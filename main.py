@@ -1,7 +1,6 @@
-#! some module
-
+import math
 class Calculator:
-    
+
     def add(x: int, y: int) -> int:
         return x + y
 
@@ -19,6 +18,9 @@ class Calculator:
     def mod(x: int, y: int) -> int:
         return x % y
 
+    def pi():
+        return math.pi
+
 def main():
     x, y = map(int, input('> ').split())
     calc = Calculator()
@@ -27,6 +29,7 @@ def main():
     calc.mult(x, y)
     calc.div(x, y)
     calc.mod(x, y)
+    calc.pi()
 
 if __name__ == '__main__':
     main()
