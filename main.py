@@ -24,12 +24,12 @@ class Calculator:
 def main():
     x, y = map(int, input('> ').split())
     calc = Calculator()
-    calc.sub(x, y)
-    calc.add(x, y)
-    calc.mult(x, y)
-    calc.div(x, y)
-    calc.mod(x, y)
-    calc.pi()
+    print(calc.sub(x, y))
+    print(calc.add(x, y))
+    print(calc.mult(x, y))
+    print(calc.div(x, y))
+    print(calc.mod(x, y))
+    print(calc.pi())
 
 if __name__ == '__main__':
     main()
